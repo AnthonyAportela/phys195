@@ -1,0 +1,473 @@
+\documentclass[12pt]{article}
+
+%------------------------------------------------
+% PACKAGES AND CONFIGURATIONS
+%------------------------------------------------
+\usepackage[margin=1in]{geometry}     % Adjust margins
+\usepackage{amsmath,amssymb}         % For math symbols
+\usepackage{graphicx}                % For including images
+\usepackage{hyperref}                % For hyperlinks
+\hypersetup{
+  colorlinks   = true,               % Color links instead of ugly boxes
+  urlcolor     = blue,               % Color for external hyperlinks
+  linkcolor    = black,              % Color of internal links
+  citecolor    = black               % Color of citation links
+}
+\usepackage{setspace}                % For line spacing
+\usepackage{enumitem}                % For custom lists
+\usepackage[T1]{fontenc}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{multicol}
+\usepackage{caption} 
+\newcolumntype{Y}{>{\raggedright\arraybackslash}X} % Define justified X column type
+
+% Optional: You can set line spacing to something other than single if desired
+%\linespread{1.1}
+
+%------------------------------------------------
+% BEGIN DOCUMENT
+%------------------------------------------------
+\begin{document}
+
+%------------------------------------------------
+% TITLE AND BASIC INFO
+%------------------------------------------------
+\begin{center}
+{\LARGE \textbf{PHYS 195 -- Mechanics}}\\[4pt]
+\textbf{San Diego Mesa College -- Spring 2025}\\[2pt]
+\end{center}
+
+\noindent
+\emph{This syllabus may be subject to change. 
+If changes are made, students will be notified.}
+\medskip
+
+\hrule
+
+\section*{Instructor Information}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{@{} 
+                            >{\centering\arraybackslash}X
+                          | >{\centering\arraybackslash}X
+                          | >{\centering\arraybackslash}X
+                          | >{\centering\arraybackslash}X@{}}
+Anthony Aportela &
+\href{mailto:aaportela@sdccd.edu}{aaportela@sdccd.edu} &
+MS-115-P &
+(404)\,943-0287 \\
+\end{tabularx}
+\end{center}
+
+\hrule
+
+\section*{Course Meeting Times}
+
+\begin{center}
+\begin{tabularx}{\textwidth}{| >{\arraybackslash}X
+                              | >{\centering\arraybackslash}X
+                              | >{\raggedleft\arraybackslash}X |}
+\hline
+\textbf{Class}          & \textbf{Time}              & \textbf{Location} \\ \hline
+\textbf{Lecture}        & M/W 12:45--2:50 PM         & MS-101            \\ \hline
+\textbf{Lab Section 1}  & M/W 3:00--4:25 PM          & MS-107            \\ \hline
+\textbf{Lab Section 2}  & M/W 4:35--6:00 PM          & MS-107            \\ \hline
+\textbf{Office Hours}   & (TBD)                      & (TBD)             \\ \hline
+\textbf{Peer Mentoring} & (TBD)                      & (TBD)             \\ \hline
+\end{tabularx}
+\end{center}
+
+%------------------------------------------------
+% DESCRIPTION
+%------------------------------------------------
+\section*{Description}
+This is the first of a three-semester calculus-based general physics sequence designed for scientists and engineers. 
+Topics include linear kinematics, Newton's Laws, energy, rotational kinematics, gravity, oscillatory motion, and thermodynamics. 
+Laboratory work on various aspects of motion, interactions, energy transformation, and error propagation is included. 
+This course is intended for students majoring in the physical sciences or engineering.
+
+\bigskip
+\noindent
+Join the Discord!
+You may discuss homework, lab, ask questions, etc.
+It will also be the fastest way of getting in contact with me outside of class/lab/office hours.
+
+\medskip
+
+\noindent
+(invite link TBD)
+
+\medskip
+\hrule
+
+%------------------------------------------------
+% COURSE LEARNING OUTCOMES
+%------------------------------------------------
+\section*{Course Learning Outcomes}
+\begin{itemize}[leftmargin=2em]
+  \item Students will utilize quantitative methods to analyze and predict the behavior of physical systems.
+  \item Students will prepare and analyze graphical representations of collected data.
+\end{itemize}
+
+By the end of the course you will be comfortable describing how a car moves, how rockets are propelled, how bridges stay up, and how shock absorbers work. 
+The skills that you learn in your first physics semester are important for success as you move through the sequence. 
+As you take this course, look for phenomena in your everyday life that relate to topics discussed in class. 
+Consider a scientific explanation for the things you observe.
+
+Unlike mathematics, where solutions often have clear-cut answers, \textbf{learning physics involves grasping underlying concepts and applying them to real-world scenarios.} You may find this course to be very difficult in the beginning. 
+Even if you are used to receiving high grades, it is not uncommon for new physics students to struggle early on. 
+\textbf{\textcolor{ForestGreen}{
+If this happens, don’t give up! You will do better as time goes on, as long as you work at it.
+}}
+
+\medskip
+\hrule
+
+\subsection*{Statement of Retention}
+If you are having difficulties in or outside of class that may be preventing you from succeeding in the course and are considering dropping, please speak with me first. 
+We can discuss strategies for studying to improve your grade so that you can remain in the course and successfully complete it.
+
+\medskip
+\hrule
+
+%------------------------------------------------
+% REQUIRED MATERIALS
+%------------------------------------------------
+\section*{Required Materials}
+\begin{enumerate}[leftmargin=2em,labelsep=0.5em]
+\item \textbf{Access to WileyPlus for online homework and eBook:} \\
+  \emph{Fundamentals of Physics} (Halliday, Resnick, and Walker), Wiley 12th edition
+  \begin{itemize}
+    \item Purchase access code at the bookstore for \$49.00 (best price).
+    \item WileyPlus content will be on Canvas, not on the Wiley website. Never go to the Wiley website directly.
+  \end{itemize}
+
+\item Scientific or graphing calculator (for exams or other in-person assessments)
+\item Grid paper, whether in a physical notebook, scratch-paper, tablet, or otherwise.
+\end{enumerate}
+
+\medskip
+\hrule
+
+\section*{Useful, but Optional Materials}
+\begin{itemize}[nosep,leftmargin=1.5em]
+    \item A mobile device, such as a laptop or tablet.
+    \item A good disposition.
+\end{itemize}
+
+\medskip
+\hrule
+
+%------------------------------------------------
+% CLASS POLICIES -- TODO: talk about how it's their responsibility to look at add/drop dates
+%------------------------------------------------
+\section*{Class Policies}
+Come to class ready to listen, take notes, ask questions, and participate in activities. 
+Be kind and respectful to your classmates and to the instructor.
+Intolerance will not be tolerated.
+The instructor reserves the right to dismiss a student from class for breaking any class policy.
+
+\medskip
+\noindent
+\textbf{Cell Phones and Devices:} 
+Cellphones may be used as a calculator when appropriate, not otherwise. 
+All devices should be set to silent while in lecture or lab.
+During exams and quizzes, cell phones will be on your desks, turned off and facing up.
+
+\medskip
+\noindent
+\textbf{Attendance Responsibility:} 
+It is the responsibility of the student to know the add/drop, drop/withdrawal, and pass/fail deadlines.
+It is the responsibility of the student to drop all classes in which you are no longer attending. 
+It is the at the instructor’s discretion to withdraw a student after the add/drop deadline due to inactivity. 
+Any student with three or more unexcused absences and/or three or more missed assignments before the withdrawal period may be dropped and receive a ``W.'' 
+If you miss two class meetings in a row or two labs in a row, you may be dropped. 
+Inform me of any such situations if this happens. 
+Your full participation each day is essential for your success. 
+Frequent tardiness (15 minutes or more) or leaving class early (15 minutes or more) will count as an unexcused absence. 
+Students who remain enrolled in a class beyond the published withdrawal date will receive an evaluative letter grade (A, B, C, D, F). 
+Students that miss more than 4 class sessions may have their grade lowered by one letter grade.
+
+\medskip
+\hrule
+
+\subsection*{Academic Integrity Statement}
+Discussing ideas, techniques, and approaches in a group (lab, peer mentoring, etc.) is beneficial and encouraged, but all academic work must be performed individually, as you are graded individually.
+
+
+\medskip
+\noindent
+\textbf{Plagiarism:} 
+If you submit another person’s work -- either wholly or in part -- as your own, you have plagiarized. 
+This includes copying from Chegg, CourseHero, or any other ``help'' sites. 
+It also applies to group work if one person does the work and the rest copy.
+
+\medskip
+\noindent
+\textbf{ChatGPT:}
+The use of ChatGPT or other large language models or AI is strictly prohibited. 
+We understand that many of you may utilize AI tools to assist with your coursework. 
+While these tools can be valuable resources for learning and exploring concepts, it is important to use them responsibly. 
+Copying and pasting or otherwise relying on AI-generated answers without making an effort to understand the material not only undermines your learning but also violates the principles of academic integrity and will be treated in the same manner as cheating or plagiarism. 
+\textbf{If you are not mature enough to learn the material on your own, you are not ready for the real world.}
+
+\medskip
+\noindent
+\textbf{Penalties:} 
+\textcolor{red}{Any academic dishonesty will result in an automatic zero on the assignment as well as a report to the Disciplinary Officer according to the college's \textbf{Student Disciplinary Procedures}:}
+\url{https://www.sdccd.edu/docs/District/procedures/Student%20Services/AP%205520.pdf}
+
+\medskip
+\noindent
+\textbf{During Exams:} 
+Any students who are found looking at any mobile device will have their exam collected at that time.
+Reference to any unauthorized materials will result in an automatic zero for that exam as well as a report to the Disciplinary Officer.
+
+\medskip
+\hrule
+
+\subsection*{Student Code of Conduct}
+Students are expected to adhere to the Student Code of Conduct at all times. 
+Students who violate the Student Code of Conduct may be removed from class by the faculty for the class meeting in which the behavior occurred, and the next class meeting.
+\begin{itemize}[leftmargin=2em]
+    \item Incidents involving removal of a student from class will be reported to the college Disciplinary Officer for follow-up.
+    \item The Student Code of Conduct can be found in Board of Trustees Policy, BP 3100, posted on the District website at:
+    \url{https://sdcity.edu/about/leadership/student-services/docs/bp_3100.pdf}
+\end{itemize}
+
+\medskip
+\hrule
+
+\subsection*{Statement of Accommodation}
+San Diego Mesa College is committed to creating an accessible and inclusive learning environment consistent with SDCCD policy and federal and state law. 
+Please let me know if you experience any barriers to learning so I can work with you to ensure you have an equal opportunity to fully participate in this course.
+
+If you are a student with a disability, or think you may have a disability, and need accommodations, please contact the Disability Support Programs and Services department (DSPS). 
+See the San Diego Mesa College DSPS website for more information: 
+\url{https://www.sdccd.edu/departments/educational-services/dsps/}
+
+If you are already registered with DSPS, please deliver your Authorized Academic Accommodation Letter to me in the first week of the semester if possible.
+
+\medskip
+\hrule
+
+%------------------------------------------------
+% GRADING
+%------------------------------------------------
+\section*{Grading Policy and Description of Categories}
+
+\begin{center}
+\begin{tabularx}{5in}{| >{\bfseries}l | r | X | l | l |}
+% Instead of a full \hline, use \cline to skip column 3
+\cline{1-2}\cline{4-5}
+\multicolumn{2}{|c|}{\textbf{Grading Breakdown}} 
+& \multicolumn{1}{c}{}% Spacer column
+& \multicolumn{2}{|c|}{\textbf{Grade Scale}} \\
+\cline{1-2}\cline{4-5}
+Classroom Participation & 5\%  & & 90--100\% & A \\
+Homework                & 13\% & & 80--89\%  & B \\
+Quizzes                 & 10\% & & 70--79\%  & C \\
+4 Exams                 & 42\% & & 51--69\%  & D \\
+Final Exam              & 10\% & & Under 51\% & F \\
+Laboratory              & 20\% & &            &   \\
+\cline{1-2}\cline{4-5}
+\end{tabularx}
+\end{center}
+
+\noindent
+All material other than quizzes and exams are to be scanned using a traditional scanner or scanning app (Office Lens), converted to PDF, and submitted on canvas.
+\emph{Students with more than 4 absences could have their final course grade lowered by one letter grade.}
+The lowest Exam, Homework, Lab, and Participation score will be dropped at the end of the semester. 
+
+\subsection*{Late Work}
+No make-up work will be accepted. 
+If there is an emergency necessitating an extension on any work, contact the instructor immediately. 
+
+\subsection*{Extra Credit}
+Ignore any extra credit references in the \emph{Physics Survival Guide}; 
+Extra credit can be earned in two ways:
+\begin{itemize}
+\item Towards each exam by completing worksheets related to said exam. 
+\item Up to 2.5\% towards the overall grade can be earned by attending office hours and asking questions.  
+\begin{itemize}
+    \item Earn 0.25\% per visit where you ask questions.
+    \item A maximum of 2.5\% can be accrued through office hour visits.
+\end{itemize}
+\end{itemize}
+
+\noindent
+Worksheets are available on Canvas and should be submitted before the indicated due date.
+
+%------------------------------------------------
+% DESCRIPTION OF CATEGORIES
+%------------------------------------------------
+\subsection*{Classroom Participation (5\%)}
+At the end of each class, you will turn in the “exit problem.” These are ungraded questions meant to gauge understanding. If you are present, actively participate, and turn in your sheet, you receive credit for that session. You may miss up to two sessions with no penalty.
+
+\subsection*{Homework (13\%)}
+Homework is assigned weekly on Canvas using WileyPlus. Analyzing and solving multiple problem types is essential to success in physics. Expect to spend at least 6--12 hours per week on homework. 
+\begin{itemize}[leftmargin=2em]
+  \item Work out every problem neatly in a notebook, so you can study your solutions later and get help if stuck.
+  \item Homework problems can be challenging! You have 10 submission attempts per part; no penalty for retries.
+  \item Use the textbook, peer mentors, classmates, or office hours for help, but do \emph{not} use ChatGPT, Chegg, or other answer sites or AI tools.
+  \item Complete homework daily so it doesn't pile up on the weekend.
+  \item Clearly label challenging problems and redo them as you study for quizzes/exams.
+\end{itemize}
+
+\subsection*{Quizzes (10\%)}
+On the first lecture of each week, a quiz will test understanding of the previous week’s material. One quiz will be dropped. 
+There will be no quizzes during exam weeks.
+
+\subsection*{Exams (42\%)}
+There will be four exams; the lowest exam score is dropped. 
+You may use one 8.5\,x\,11 inch sheet of notes (both sides). 
+Exams are closed-book and closed-notes otherwise. 
+Exams will occur during your scheduled lab sessions. 
+Calculators are allowed, but no other electronic devices. 
+Hats, caps, or hoodies should not be worn during exams. 
+Show all work neatly and clearly. 
+You have one week after receiving an exam grade to contest it.
+
+\subsection*{Final Exam (10\%)}
+The cumulative final exam consists of multiple-choice conceptual questions plus calculation problems on gravity, oscillations, and core course concepts. 
+You may bring one 8.5\,x\,11 inch formula sheet (both sides).
+
+\subsection*{Exam/Quiz Grading Rubric}
+Quiz and exam problems are scored on a 0--3 scale:
+\begin{description}[leftmargin=1.5em,labelsep=0.5em]
+  \item[3] Correctly identify concepts, write relevant equations symbolically with diagrams, and properly use given information to solve.
+  \item[2] Identify correct concepts and write equations, but may contain minor physical errors and/or significant math errors.
+  \item[1] Identify some relevant concepts and equations but have major errors in setup or use of information.
+  \item[0] Fail to identify any relevant concepts or equations.
+\end{description}
+
+%------------------------------------------------
+% LABS
+%------------------------------------------------
+\subsection*{Labs (20\%)}
+Lab manuals are posted on Canvas and is the responsibility of the student to have a copy to write on, physical or digital, before the lab. 
+Although work is done in groups, each student submits their own write-up, listing group member names. 
+You lose points for arriving late or leaving early. 
+One lab score is dropped. 
+Pre-lab activities (if assigned) must be completed before entering lab.
+
+\subsubsection*{Laboratory Report Grading}
+\begin{description}[leftmargin=1.5em,labelsep=0.5em]
+  \item[Presentation: 90\%] Follow the required format; sentences and work are \textbf{legible, understandable, and easy to follow}.
+  Calculations are neat with proper units. 
+  Graphs are properly formatted with labeled axes, units, and best-fit lines if required.
+  \item[Experimental Precision/Accuracy: 10\%] Results within 10\% are generally acceptable; 10--20\% difference may indicate problems; above 20\% is generally unacceptable. (Some labs allow for greater variations; instructions will clarify.)
+\end{description}
+
+\subsubsection*{Laboratory Policies}
+\noindent
+\textbf{Safety:} No food or drink in lab (bottled water is allowed if kept in a bag). Closed-toe shoes are unfortunately required.
+
+\noindent
+\textbf{Preparation:} Arrive prepared with the lab manual. 
+If you arrive late, the door may be locked, and you may receive zero for that lab. 
+
+\noindent
+\textbf{Make-Ups:} Lab sessions cannot be made up. 
+You must be present for the entire data collection portion. 
+Once you've gathered all data, you may leave, but it is recommended you stay and complete the lab. 
+Lab reports are typically due the midnight before the next lab session unless noted otherwise.
+
+\medskip
+\hrule
+
+%------------------------------------------------
+% SCHEDULE
+%------------------------------------------------
+\section*{Schedule}
+\begin{center}
+\begin{tabularx}{\textwidth}{|c|Y|l|l|}
+\hline
+\textbf{Week} & \textbf{Topics} & \textbf{Reading (Ch.)} & \textbf{Lab} \\ \hline
+1  & Vectors, Measurements, Translational Kinematics--1D & 1, 2, 3 & Vectors \\ \hline
+2  & Translational Kinematics--1D Motion, Quiz \#1       & 2, 3     & Reaction Time, Free Fall \\ \hline
+3  & Translational Kinematics: 2-D (projectile) and 3-D, Quiz \#2 
+   & 3, 4     & OH/Problem Solving \\ \hline
+4  & Relative Motion, Forces, 1st Newton’s Law, Quiz \#3 & 4, 5     & Projectile Motion \\ \hline
+5  & 2nd/3rd Newton’s Laws, \textbf{Exam \#1 (Ch. 1--4)} & 5, 6     & Exam \#1 in lab \\ \hline
+6  & Friction, Circular Motion, Drag, Quiz \#4           & 4, 6     & Newton’s 2nd Law \\ \hline
+7  & Translation: Kinetic Energy and Work, Quiz \#5      & 7        & Drag Force: Gas \\ \hline
+8  & Translation: Potential Energy, Energy Conservation, Quiz \#6 
+   & 8        & Drag Force: Fluid \\ \hline
+9  & Energy Conservation, PE Graphs, \textbf{Exam \#2 (Ch. 1--6)} 
+   & 9        & Exam \#2 in lab \\ \hline
+10 & Momentum, Impulse, CoM, Collisions, Quiz \#7        & 9, 10    & Collisions \\ \hline
+11 & Rotation: Kinematics, Newton’s Laws, Work--Energy, Quiz \#8 
+   & 10       & Torque \\ \hline
+12 & Rolling Motion, Torque, Angular Momentum, Static Equilibrium, Quiz \#9 
+   & 11, 12   & \textbf{Exam \#3 (Ch. 1--9)} in lab \\ \hline
+13 & Simple Harmonic Motion (Undamped)                  & 15       & Range Prediction \\ \hline
+14 & Damped SHM, Resonance, Gravity, Quiz \#10          & 13, 15   & SHO -- Mass Spring \\ \hline
+15 & Fluids, Thermodynamics, \textbf{Exam \#4 (Ch. 1--11)} 
+   & 14, 18   & SHO -- Mass Pendulum \\ \hline
+16 & Review for Final Exam                              &          & \\ \hline
+\multicolumn{4}{c}{\textbf{Final Exam} -- Cumulative (with focus on Ch. 13, 15)} \\
+\end{tabularx}
+\end{center}
+
+\newpage
+
+%------------------------------------------------
+% ADDITIONAL RESOURCES
+%------------------------------------------------
+\section*{Additional Resources}
+\begin{itemize}[leftmargin=2em]
+  \item \textbf{Flipping Physics:} \url{https://www.flippingphysics.com/ap-physics-1.html}
+  \item \textbf{MIT Physics Lectures by Dr.~Walter Lewin:} \url{https://www.youtube.com/playlist?list=PLyQSN7X0ro203puVhQsmCj9qhlFQ-As8e}
+  \item \textbf{Khan Academy:} \url{https://www.khanacademy.org/science/physics}
+  \item \textbf{HyperPhysics:} \url{http://hyperphysics.phy-astr.gsu.edu/hbase/hph.html}
+  \item \textbf{PhET Simulations:} \url{http://phet.colorado.edu}
+\end{itemize}
+
+%------------------------------------------------
+% HOW TO SUCCEED
+%------------------------------------------------
+\section*{How to Succeed in This Class}
+\noindent
+\textbf{Mindset:} Cultivate curiosity and persistence. Embrace challenges as opportunities for growth.
+
+\noindent
+\textbf{Preparation:} Read the text or watch instructor videos before class. Preview the chapter sections and vocabulary. Review notes \emph{immediately} after class to reinforce learning.
+
+\noindent
+\textbf{Note-taking:} Taking a picture of the board is not a substitute for note-taking. Writing by hand helps your brain process and retain information.
+
+\noindent
+\textbf{Homework:} Physics is a skill, not a talent. It requires practice. Begin HW the same day it’s assigned. Take a short break when stuck, and get help if needed. Present your work neatly, showing all steps.
+
+\noindent
+\textbf{Attendance:} Be present and punctual. Avoid leaving class during instruction.
+
+\noindent
+\textbf{Questions:} Don’t hesitate to ask. Likely, others share the same questions. See me after class or during office hours if needed.
+
+\noindent
+\textbf{Peer Mentoring:} Collaborate with classmates or attend scheduled tutoring. Teaching each other deepens understanding.
+
+\noindent
+\textbf{Study Groups:} Solve homework on your own first, then meet to discuss tricky parts. This strategy boosts efficiency.
+
+\noindent
+\textbf{Review Problems Multiple Times:} Redo problems a day later, invent variations, and see if you can still solve them. This cements concepts and techniques.
+
+\noindent
+\textbf{Tutoring Center:} Mesa Tutoring \& Computing Centers (MT2C) in the LRC (Library) has free tutoring, including physics.
+
+\noindent
+\textbf{Wonder:} Look for real-world phenomena related to class topics. Attempt scientific explanations for what you see.
+
+\begin{figure}[h] % 'h' places the image approximately here
+\centering
+\includegraphics[width=0.1\textwidth]{cat.png} % Adjust width as needed
+\caption*{He's always watching}
+\label{fig:always_watching} % Optional: label for referencing
+\end{figure}
+
+\end{document}
